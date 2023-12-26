@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-
-<!-- Mirrored from team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Dec 2023 10:34:51 GMT -->
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	
-	<title> Bestshop - mini ecommerce shop templates</title>
+	<title> Smart Womaniya</title>
 	<meta content="" name="description">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="width=device-width" name="viewport">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link href="img/logo/favicon.png" rel="icon" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<link href="css/bootstrap-light.css" rel="stylesheet">
 	<link id="pagestyle" href="css/theme-light.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body data-offset="50" data-spy="scroll" data-target=".navbar" class="dark-theme">
-	<!-- PRELOADER -->
 	<div class="page-loader">
 		<div class="loader">Loading...</div>
 	</div>
-	<!-- /PRELOADER -->
-	<!-- header -->
 	<nav class="navbar navbar-fixed-top shadow" id="js-nav">
 		<div class="container">
 			<div class="navbar-header">
@@ -49,21 +45,19 @@
 			</div>
 		</div>
 	</nav>
-	<!--/ End header -->
-	
-	<!-- slider -->
+
 	<section class="home section image-slider" id="home">
 		<div class="home-slider text-center">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" style="background: url(img/slider/slide2.jpg);">
-					<h1>Best <span class="hglight">Shop</span></h1>
+					<h1>Smart <span class="hglight">Womaniya</span></h1>
 					<h2 class="home-slider-title-main">with working cart & pay pal</h2>
 					<div class="home-buttons text-center"> <a href="#products" class="btn btn-lg  btn-primary">our products</a> </div>
 					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
 				</div>
 
 				<div class="swiper-slide" style="background: url(img/slider/slide1.jpg);">
-					<h1>Sell <span class="hglight">shop</span></h1>
+					<h1>Smart <span class="hglight">Womaniya</span></h1>
 					<h2 class="home-slider-title-main">52% Discount for this season </h2>
 					<div class="home-buttons text-center"> <a href="#products" class="btn btn-lg  btn-primary">our products</a> </div>
 					<a class="arrow bounce text-center" href="#about"> <span class="ti-mouse"></span> <span class="ti-angle-double-down"></span> </a>
@@ -74,56 +68,46 @@
 			<div class="home-slider-prev left-arrow-negative"> <span class="ti-arrow-left"></span> </div>
 		</div>
 	</section>	
-	<!--/ slider -->
-	
-	<!-- cart section -->
 	<span id="items-counter" class="h3 cart-items-counter" style="display: none">0</span>
 	<div class="cart-widget-container">
 		<div class="cart-widget text-center">
 			<a class="close" id="cart-widget-close">
 				<span class="ti-close"></span>
 			</a>
-			<h1>Best<span class="hglight">shop</span></h1>
+			<h1>S.<span class="hglight">W.</span></h1>
 			<h3 class="section-heading">Your cart</h3>
 			<div id="cart-empty" class="cart-empty"><h4>is empty <span class="ti-face-sad icon"></span> </h4></div>
-			<!-- container for js inject cart items content -->
 			<div class="items-container" id="items"></div>
-			<!-- container for js inject cart items content -->
-
 			<div class="cart-delivery" id="cart-delivery">
 				<h4 class="section-heading">Delivery option</h4>
 				<div class="custom-radio">
-					<input id="radio1" type="radio" name="delivery" value="10.00" checked> 
-					<label for="radio1">domestic delivery ($10)</label>
+					<input id="radio1" type="radio" name="delivery" value="100.00" checked> 
+					<label for="radio1">domestic delivery (₹100)</label>
 				</div>
 
 				<div class="custom-radio">
-					<input id="radio2" type="radio" name="delivery" value="15.00"> 
-					<label for="radio2">express domestic delivery ($15) </label>
+					<input id="radio2" type="radio" name="delivery" value="150.00"> 
+					<label for="radio2">express domestic delivery (₹150) </label>
 				</div>
 
 				<div class="custom-radio">
-					<input id="radio3" type="radio" name="delivery" value="20.00"> 
-					<label for="radio3">worldwide delivery ($20)</label>
+					<input id="radio3" type="radio" name="delivery" value="200.00"> 
+					<label for="radio3">worldwide delivery (₹200)</label>
 				</div>
 			</div>
 			<div class="cart-summary" id="cart-summary">
 				<h4 class="section-heading">summary</h4>
-				<div class="cart-summary-row" id="cart-total">Total products <span class="cart-value">$<span id="cost_value">0.00</span></span></div>
-				<div class="cart-summary-row">Shipping <span class="cart-value">$<span id="cost_delivery"></span></span></div>
-				<div class="cart-summary-row cart-summary-row-total">Total <span class="cart-value">$<span id="total-total"></span></span></div>
+				<div class="cart-summary-row" id="cart-total">Total products <span class="cart-value">₹<span id="cost_value">0.00</span></span></div>
+				<div class="cart-summary-row">Shipping <span class="cart-value">₹<span id="cost_delivery"></span></span></div>
+				<div class="cart-summary-row cart-summary-row-total">Total <span class="cart-value">₹<span id="total-total"></span></span></div>
 			</div>
 
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="cart-form" id="cart-form">
-				<!-- Identify your business so that you can collect the payments. -->
 				<input type="hidden" name="business" value="yourpaypal@email.com">
-				<!-- Specify a Buy Now button. -->
 				<input type="hidden" name="cmd" value="_xclick">
-				<!-- Specify details about the item that buyers will purchase. -->
 				<input type="hidden" name="item_name" value="Bestshop shop - checkout">
 				<input type="hidden" name="amount" id="amount" value="">
 				<input type="hidden" name="currency_code" value="USD">
-				<!-- Display the payment button. -->
 				<button type="submit" name="submit" class="btn btn-default btn-lg">
 				pay pal checkout <span class="ti-arrow-right"></span>
 				</button>
@@ -131,9 +115,6 @@
 		</div>
 		<div class="cart-widget-close-overlay"></div>
 	</div>
-	<!--/ cart section end -->
-	
-	<!-- Catalog area -->
 	<div class="catalog-area">
 		<div class="container">
 			<div class="row">
@@ -173,9 +154,6 @@
 			</div>
 		</div>
 	</div>
-	<!--/ Catalog area -->
-	
-	<!-- products area -->	
 	<section class="section-min section product" id="products">
 		<div class="container overflow-hidden">
 			<div class="row">
@@ -188,39 +166,58 @@
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
 							    	<span class="sale-p">sale</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-1.jpg"> 
+									<a href="#" data-class=".pad-1" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-1.jpg"> 
 									<img alt="product image" class="product-list-secondary-img" src="img/pad-1.jpg">
 									</a>
 								</span> 
 
-								<a href="#" data-target="#product-01" data-toggle="modal">
+								<a href="#" data-class=".pad-1" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Winter Long Sleeve Black White </span>
-										<span class="product-list-price">$400.00</span>
-										<span class="product-list-price sell-p"><del>$580.00</del></span>
+										<span class="product-list-name h4 black-color">Winter Long pack </span>
+										<span class="product-list-price">₹400.00</span>
+										<span class="product-list-price sell-p"><del>₹580.00</del></span>
 									</span>
 								</a> 
 
-								<button class="btn btn-default add-item" type="button" data-image="img/pad-1.jpg" data-name="Winter Long Sleeve Black White " data-cost="400.00" data-id="1" >
+								<button class="btn btn-default add-item" type="button" data-image="img/pad-1.jpg" data-name="Winter Long pack " data-cost="400.00" data-id="1" >
 									add to cart
 								</button> 		
 							</li>
 							
-							<li class="swiper-slidess text-center"> 
+							<!-- <li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-3.jpg"> 
+									<a href="#" data-class=".pad-2" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-3.jpg"> 
 									<img alt="product image" class="product-list-secondary-img" src="img/pad-3.jpg">
 									</a>
 								</span> 
 
-								<a href="#" data-target="#product-01" data-toggle="modal">
+								<a href="#" data-class=".pad-2" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
 										<span class="product-list-name h4 black-color">women totes lady handbag</span>
-										<span class="product-list-price">$300.00</span>
+										<span class="product-list-price">₹300.00</span>
 									</span>
 								</a>
 
 								<button class="btn btn-default add-item" type="button" data-image="img/pad-3.jpg" data-name="women totes lady handbag" data-cost="300.00" data-id="2" >
+									add to cart
+								</button> 	
+							</li> -->
+
+							<li class="swiper-slidess text-center"> 
+								<span class="product-list-left pull-left">
+									<a href="#" data-class=".pad-3" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-3.jpg"> 
+									<img alt="product image" class="product-list-secondary-img" src="img/pad-3.jpg">
+									</a>
+								</span> 
+
+								<a href="#" data-class=".pad-3" data-target="#product-01" data-toggle="modal">
+									<span class="product-list-right pull-left">
+										<span class="product-list-name h4 black-color"> Anti Bacteria Extra Long Sanitary Pads</span>
+										<span class="product-list-price">₹300.00</span>
+									</span>
+								</a>
+
+								<button class="btn btn-default add-item" type="button" data-image="img/pad-3.jpg" data-name=" Anti Bacteria Extra Long Sanitary Pads" data-cost="300.00" data-id="2" >
 									add to cart
 								</button> 	
 							</li>
@@ -228,38 +225,38 @@
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
 							    	<span class="sale-p new-p">new</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-4.jpg"> 
+									<a href="#" data-class=".pad-4"  data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-4.jpg"> 
 									<img alt="product image" class="product-list-secondary-img" src="img/pad-4.jpg">
 									</a>
 								</span> 
 
-								<a href="#" data-target="#product-01" data-toggle="modal">
+								<a href="#" data-class=".pad-4" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Lace water soluble sexy dress</span>
-										<span class="product-list-price">$600.00</span>
+										<span class="product-list-name h4 black-color"> XXL Sanitary Pads</span>
+										<span class="product-list-price">₹600.00</span>
 									</span>
 								</a> 
 
-								<button class="btn btn-default add-item" type="button" data-image="img/pad-4.jpg" data-name="Lace water soluble sexy dress" data-cost="600.00" data-id="3" >
+								<button class="btn btn-default add-item" type="button" data-image="img/pad-4.jpg" data-name=" XXL Sanitary Pads" data-cost="600.00" data-id="3" >
 									add to cart
 								</button> 		
 							</li>
 							
 							<li class="swiper-slidess  text-center" > 
 								<span class="product-list-left pull-left">
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-5.jpg"> 
+									<a href="#" data-class=".pad-5" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-5.jpg"> 
 									<img alt="product image" class="product-list-secondary-img" src="img/pad-5.jpg">
 									</a>
 								</span> 
 
-								<a href="#" data-target="#product-01" data-toggle="modal">
+								<a href="#" data-class=".pad-5" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Elegant Formal Party Dress</span>
-										<span class="product-list-price">$500.00</span>
+										<span class="product-list-name h4 black-color">Sanitary Regular Pads</span>
+										<span class="product-list-price">₹500.00</span>
 									</span>
 								</a>
 
-								<button class="btn btn-default add-item" type="button" data-image="img/pad-5.jpg" data-name="Elegant Formal Party Dress" data-cost="500.00" data-id="4" >
+								<button class="btn btn-default add-item" type="button" data-image="img/pad-5.jpg" data-name="Sanitary Regular Pads" data-cost="500.00" data-id="4" >
 									add to cart
 								</button> 	
 							</li>
@@ -267,20 +264,20 @@
 							<li class="swiper-slidess text-center"> 
 								<span class="product-list-left pull-left">
 								    <span class="sale-p">sale</span>
-									<a href="#" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-6.jpg"> 
+									<a href="#" data-class=".pad-6" data-target="#product-01" data-toggle="modal"><img alt="product image" class="product-list-primary-img" src="img/pad-6.jpg"> 
 									<img alt="product image" class="product-list-secondary-img" src="img/pad-6.jpg">
 									</a>
 								</span> 
 
-								<a href="#" data-target="#product-01" data-toggle="modal">
+								<a href="#" data-class=".pad-6" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Mini Dress Ladies Sleeve</span>
-										<span class="product-list-price">$600.00</span>
-										<span class="product-list-price sell-p"><del>$700.00</del></span>
+										<span class="product-list-name h4 black-color">Stayfree Secure XL Sanitary Pads</span>
+										<span class="product-list-price">₹600.00</span>
+										<span class="product-list-price sell-p"><del>₹700.00</del></span>
 									</span>
 								</a> 
 
-								<button class="btn btn-default add-item" type="button" data-image="img/pad-6.jpg" data-name="Mini Dress Ladies Sleeve" data-cost="600.00" data-id="5" >
+								<button class="btn btn-default add-item" type="button" data-image="img/pad-6.jpg" data-name="Stayfree Secure XL Sanitary Pads" data-cost="600.00" data-id="5" >
 									add to cart
 								</button> 		
 							</li>
@@ -294,12 +291,12 @@
 
 								<a href="#" data-target="#product-01" data-toggle="modal">
 									<span class="product-list-right pull-left">
-										<span class="product-list-name h4 black-color">Winter Long Sleeve Black White </span>
-										<span class="product-list-price">$500.00</span>
+										<span class="product-list-name h4 black-color">Whisper Ultra Clean XL Sanitary Pads </span>
+										<span class="product-list-price">₹500.00</span>
 									</span>
 								</a>
 
-								<button class="btn btn-default add-item" type="button" data-image="img/pad-10.jpg" data-name="Winter Long Sleeve Black White " data-cost="500.00" data-id="6" >
+								<button class="btn btn-default add-item" type="button" data-image="img/pad-10.jpg" data-name="Whisper Ultra Clean XL Sanitary Pads " data-cost="500.00" data-id="6" >
 									add to cart
 								</button> 	
 							</li>
@@ -311,39 +308,38 @@
 		
 		<div class="modal fade product-modal" id="product-01" role="dialog" tabindex="-1">
 			<div class="modal-dialog">
-				<!-- Modal content-->
 				<div class="modal-content shadow">
 					<a class="close" data-dismiss="modal"> <span class="ti-close"></span></a>
 					<div class="modal-body">
-						<!-- Wrapper for slides -->
+
 						<div class="carousel slide product-slide" id="product-carousel">
 							<div class="carousel-inner cont-slider">
-								<div class="item active"> <img alt="" src="img/pad-1.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-2.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-3.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-4.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-5.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-6.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-7.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-8.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-9.jpg" title=""> </div>
-								<div class="item"> <img alt="" src="img/pad-10.jpg" title=""> </div>
+								<div class="item pad-1" > <img alt="" src="img/pad-1.jpg" title=""> </div>
+								<!-- <div class="item pad-2" > <img alt="" src="img/pad-2.jpg" title=""> </div> -->
+								<div class="item pad-3"> <img alt="" src="img/pad-3.jpg" title=""> </div>
+								<div class="item pad-4"> <img alt="" src="img/pad-4.jpg" title=""> </div>
+								<div class="item pad-5"> <img alt="" src="img/pad-5.jpg" title=""> </div>
+								<div class="item pad-6"> <img alt="" src="img/pad-6.jpg" title=""> </div>
+								<div class="item pad-7"> <img alt="" src="img/pad-7.jpg" title=""> </div>
+								<div class="item pad-8"> <img alt="" src="img/pad-8.jpg" title=""> </div>
+								<div class="item pad-9"> <img alt="" src="img/pad-9.jpg" title=""> </div>
+								<div class="item pad-10"> <img alt="" src="img/pad-10.jpg" title=""> </div>
 							</div>
-							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#product-carousel"> <img alt="" src="img/pad-1.jpg"> </li>
-								<li class="" data-slide-to="1" data-target="#product-carousel"> <img alt="" src="img/pad-2.jpg"> </li>
-								<li class="" data-slide-to="2" data-target="#product-carousel"> <img alt="" src="img/pad-3.jpg"> </li>
-								<li class="" data-slide-to="3" data-target="#product-carousel"> <img alt="" src="img/pad-4.jpg"> </li>
-								<li class="" data-slide-to="4" data-target="#product-carousel"> <img alt="" src="img/pad-5.jpg"> </li>
-								<li class="" data-slide-to="5" data-target="#product-carousel"> <img alt="" src="img/pad-6.jpg"> </li>
-								<li class="" data-slide-to="6" data-target="#product-carousel"> <img alt="" src="img/pad-8.jpg"> </li>
-								<li class="" data-slide-to="7" data-target="#product-carousel"> <img alt="" src="img/pad-9.jpg"> </li>
-								<li class="" data-slide-to="8" data-target="#product-carousel"> <img alt="" src="img/pad-10.jpg"> </li>
+								<li class="pad-1" data-slide-to="0" data-target="#product-carousel"> <img alt="" src="img/pad-1.jpg"> </li>
+								<!-- <li class="pad-2" data-slide-to="1" data-target="#product-carousel"> <img alt="" src="img/pad-2.jpg"> </li> -->
+								<li class="pad-3" data-slide-to="1" data-target="#product-carousel"> <img alt="" src="img/pad-3.jpg"> </li>
+								<li class="pad-4" data-slide-to="2" data-target="#product-carousel"> <img alt="" src="img/pad-4.jpg"> </li>
+								<li class="pad-5" data-slide-to="3" data-target="#product-carousel"> <img alt="" src="img/pad-5.jpg"> </li>
+								<li class="pad-6" data-slide-to="4" data-target="#product-carousel"> <img alt="" src="img/pad-6.jpg"> </li>
+								<li class="pad-7" data-slide-to="5" data-target="#product-carousel"> <img alt="" src="img/pad-7.jpg"> </li>
+								<li class="pad-8" data-slide-to="6" data-target="#product-carousel"> <img alt="" src="img/pad-8.jpg"> </li>
+								<li class="pad-9" data-slide-to="7" data-target="#product-carousel"> <img alt="" src="img/pad-9.jpg"> </li>
+								<li class="pad-10" data-slide-to="8" data-target="#product-carousel"> <img alt="" src="img/pad-10.jpg"> </li>
 							</ol>
 						</div>
-						<!-- Wrapper for slides -->
-						<div class="container">
+		
+						<!-- <div class="container">
 							<div class="row">
 								<div class="col-md-8 col-md-push-2">
 									<div class="row">
@@ -352,7 +348,7 @@
 										</div>
 										<div class="col-md-5">
 											<span class="product-right-section">
-												<span>$299.00</span>
+												<span>₹299.00</span>
 												<button class="btn btn-default add-item" type="button" data-image="img/p2.jpg" data-name="Elegant Formal Party Dress" data-cost="299.00" data-id="8">
 												add to cart </button>
 											</span>
@@ -360,23 +356,20 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- / PRODUCT MODAL -->
 	</section>
-	<!--/ products area end -->	
-	
-	<!-- About area -->	
+
 	<section class="about white-color" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h4>Why should customers choose</h4>
 					<h2> <span>our</span> products</h2>
-					<p>Lorem ipsum dolor sit amet  eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio ex eatikre commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatuor. Excepteur sint occaecat cupidataproident, sunt in culpa qui officiad est laboincididunt ut labore et dolore magna aliqua.  eiusmeiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Smart Womaniya Pads excels in innovation, comfort, and ethics. Our cutting-edge technology ensures superior absorption and leak protection, while soft, irritation-free materials prioritize comfort. Committed to sustainability, our eco-friendly pads cater to diverse needs. Advocating for women's health, we embrace transparency in manufacturing and ethical practices, fostering trust. Our customer-centric approach guarantees prompt support. By choosing Smart Womaniya, customers prioritize a revolutionary feminine hygiene solution, embracing comfort, sustainability, and empowerment.</p>
 					<div class="read-more-btn">
 						<a href="#">read more</a>
 					</div>
@@ -384,9 +377,6 @@
 			</div>
 		</div>
 	</section>
-	<!--/ About area end-->	
-	
-	<!-- Special area -->	
 	<section class="countdown" id="special">
 		<div class="container">
 			<div class="row">
@@ -395,11 +385,9 @@
 				</div>
 				<div class="col-md-7">
 					<div class="countdown-container">
-						<h3>Sexy Women Floral Embroidery</h3>
-						<!-- data in countdown ul from js -->
-						<ul id="countdown" class="countdown-counter"></ul>
-						<!-- data in countdown ul from js --><span class="countdown-price h3">$420.00 <del>$670.00</del></span>
-						<button class="btn btn-default add-item" type="button" data-image="img/pad-9.jpg" data-name="Sexy Women Floral Embroidery" data-cost="420.00" data-id="9">
+						<h3>Skinlove Soft Sanitary Pads</h3>
+						<ul id="countdown" class="countdown-counter"></ul><span class="countdown-price h3">₹420.00 <del>₹670.00</del></span>
+						<button class="btn btn-default add-item" type="button" data-image="img/pad-9.jpg" data-name="Skinlove Soft Sanitary Pads" data-cost="420.00" data-id="9">
 							add to cart
 						</button>
 					</div>
@@ -430,22 +418,17 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="testimonials-container shadow"> <img alt="user avatar" src="img/user.png">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+								<h3> Genifer <span>Domestic client</span> </h3>
+								<p> Smart Womaniya exceeds expectations with innovative, comfortable pads. Their commitment to sustainability, diverse product range, and customer-centric approach make them my top choice for feminine hygiene.</p>
 							</div>
 						</div>
 
-						<div class="swiper-slide">
-							<div class="testimonials-container shadow"> <img alt="user avatar" src="img/user2.png">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-							</div>
-						</div>
+
 
 						<div class="swiper-slide">
 							<div class="testimonials-container shadow"> <img alt="user avatar" src="img/user.png">
-								<h3> Martin Johe, Co-Founder / CEO <span>Fastcompany ltd.</span> </h3>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+								<h3> Moni <span>Domestic client</span> </h3>
+								<p> Smart Womaniya stands out with its innovative, comfortable pads. The eco-friendly approach and diverse product range reflect their commitment to quality. A customer-centric focus makes them my preferred choice.</p>
 							</div>
 						</div>
 					</div>
@@ -463,7 +446,7 @@
 					<div class="col-md-3 col-sm-3 cnt1 about-counter-single">
 						<div class="counter"> <span class="fa fa-truck icon"></span>
 							<h2>FREE SHIPPING</h2>
-							<p>Shipping in World for orders over $99</p>
+							<p>Shipping in World for orders over ₹99</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-3 cnt2 about-counter-single">
@@ -488,9 +471,6 @@
 			</div>
 		</div>
 	</section>	
-	<!--/ counter section end-->
-	
-	<!-- contact section  -->	
 	<section id="contact" class="contact contact-with-map">
 		<div class="container">
 			<div class="row">
@@ -499,20 +479,14 @@
 				</div>
 				<div class="col-md-3">
 					<div class="contact-data">
-						<h4>United States</h4>
+						<h4>India</h4>
 						<ul>
-							<li><span class="ti-mobile icon"></span>+ 123 456 7890</li>
-							<li><span class="ti-email icon"></span>admin@Bestshop</li>
-							<li><span class="ti-map-alt icon"></span>201 Oak Street Building 27 <br> Manchester, USA</li>
+							<li><span class="ti-mobile icon"></span>+91  8319364060</li>
+							<li><span class="ti-email icon"></span>info@smartwomaniya.com</li>
+							<li><span class="ti-map-alt icon"></span>Raipur</li>
 						</ul>
 					</div>
-					<div class="contact-data">
-						<h4>Australia</h4>
-						<ul>
-							<li><span class="ti-mobile icon"></span>+ 123 456 7890</li>
-							<li><span class="ti-map-alt icon"></span>201 Oak Street Building 27 <br> Manchester, USA</li>
-						</ul>
-					</div>
+				
 				</div>
 				<div class="col-md-8 col-md-push-1">
 					<div class="contact-form">
@@ -524,7 +498,7 @@
 								<input class="form-control" type="email" name="email" placeholder="E-mail">
 							</div>
 							<div class="form-group">
-								<textarea class="form-control" name="message" cols="10" rows="7" placeholder="Message"></textarea>
+								<textarea class="form-control" name="message" cols="5" rows="2" placeholder="Message"></textarea>
 							</div>
 							<button type="submit" class="btn btn-round btn-g btn btn-primary btn-lg text-center float-right">Submit</button>
 						</form>
@@ -532,17 +506,10 @@
 				</div>
 			</div>
 		</div>
-		<!-- Form Message -->
 		<div class="cr-contact-message-modal">
 			<p class="form-messege"></p>
 		</div>
-		<!--// Form Message -->
-
-		
 	</section>
-	<!--/ contact section  end-->
-
-	<!-- Footer Section -->
 	<div class="section section-min">
 		<footer class="footer">
 		 <div class="container">
@@ -614,7 +581,7 @@
 
     </div>
 	
-	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<!-- <script src="js/vendor/jquery-2.2.4.min.js"></script> -->
 	<script src="js/vendor/swiper.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/vendor/jquery.inview.js"></script>
@@ -624,8 +591,24 @@
 	<script src="js/contact.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+    $(document).ready(function () {
+        $('[data-class]').click(function (e) {
+            var targetPad = $(this).data('class');
+			$('.pad-1').removeClass("active");
+			$('.pad-2').removeClass("active");
+			$('.pad-3').removeClass("active");
+			$('.pad-4').removeClass("active");
+			$('.pad-5').removeClass("active");
+			$('.pad-6').removeClass("active");
+			$('.pad-7').removeClass("active");
+			$('.pad-8').removeClass("active");
+			$('.pad-9').removeClass("active");
+			$('.pad-10').removeClass("active");
+			$(targetPad).addClass("active");
+			
+        });
+    });
+	</script>
 </body>
-
-
-<!-- Mirrored from team90degree.com/html/tf/bestshop-new-demo/bestshop-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Dec 2023 10:35:02 GMT -->
-</html>
+	</html>

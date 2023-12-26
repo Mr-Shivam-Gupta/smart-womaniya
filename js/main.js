@@ -31,7 +31,7 @@
 		
 		
 	// COUNTDOWN
-	$('#countdown').countdown('2022/9/10', function(event) {
+	$('#countdown').countdown('2024/2/1', function(event) {
 	  var $this = $(this).html(event.strftime(''
 	//+ '<li><span>%w</span> weeks</li> '
 		+ '<li><span>%D</span> days</li> '
